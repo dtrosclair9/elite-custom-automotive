@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 const featuredServices = [
   {
     title: 'Lift Kits & Suspension',
-    tagline: 'BDS, Cognito, Superlift',
+    tagline: 'BDS, Cognito, Superlift & more',
     description:
-      'Custom suspension lifts from 2" leveling kits to 8"+ big-lift builds. Certified installer for BDS, Cognito, and Superlift on Ford, Chevy, GMC, RAM and Jeep.',
+      'Custom suspension lifts from 2" leveling kits to 8"+ big-lift builds. Certified installer for BDS, Cognito, and Superlift — and we install other top suspension brands on Ford, Chevy, GMC, RAM and Jeep.',
     href: '/services/lift-kits-suspension-lockport-la',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -241,8 +241,8 @@ export default function HomePage() {
               <p className="text-sm font-medium text-white/80">Lockport Family-Owned</p>
             </div>
             <div className="py-3 sm:py-0 px-4">
-              <p className="font-display uppercase tracking-widest text-xl">BDS · Cognito</p>
-              <p className="text-sm font-medium text-white/80">Certified Lift Installer</p>
+              <p className="font-display uppercase tracking-widest text-xl">BDS · Cognito & More</p>
+              <p className="text-sm font-medium text-white/80">Certified Lift Installer · All Brands Welcome</p>
             </div>
             <div className="py-3 sm:py-0 px-4">
               <p className="font-display uppercase tracking-widest text-xl">5.0 ★ Rated</p>
