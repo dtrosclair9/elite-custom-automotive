@@ -217,7 +217,7 @@ export default function HomePage() {
               <span className="text-chrome-light">in Lockport, LA</span>
             </h1>
             <p className="mt-7 text-lg md:text-xl text-chrome-dark max-w-2xl leading-relaxed font-light">
-              BDS-certified suspension installs, engine rebuilds, transmission swap service, custom wheels and tires.
+              Custom suspension installs, engine rebuilds, transmission swap service, custom wheels and tires.
               Backed by over a decade of custom shop experience from sister business CTR Pro Coat.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
