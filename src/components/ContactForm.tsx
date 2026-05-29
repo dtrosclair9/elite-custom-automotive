@@ -17,7 +17,7 @@ export default function ContactForm() {
     const data = new FormData(form)
 
     try {
-      const res = await fetch('https://formspree.io/f/FORMSPREE_ID', {
+      const res = await fetch('https://formspree.io/f/xbdbbjbe', {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -117,6 +117,28 @@ export default function ContactForm() {
             <option>Other / General Inquiry</option>
           </select>
         </div>
+      </div>
+
+      <div>
+        <label htmlFor="referral_source" className="block text-sm font-display uppercase tracking-wider text-chrome mb-1.5">
+          How Did You Find Us? <span className="text-accent" aria-hidden="true">*</span>
+        </label>
+        <select
+          id="referral_source"
+          name="referral_source"
+          required
+          defaultValue=""
+          className="w-full bg-primary border border-primary-light rounded-sm px-4 py-3 text-sm text-chrome focus:outline-none focus:border-accent transition"
+        >
+          <option value="" disabled>Select an option...</option>
+          <option>Google Search</option>
+          <option>Google Maps</option>
+          <option>Facebook / Social Media</option>
+          <option>Friend or Family Referral</option>
+          <option>Drove By the Shop</option>
+          <option>Saw a Build / Truck Around Town</option>
+          <option>Other</option>
+        </select>
       </div>
 
       <div>
