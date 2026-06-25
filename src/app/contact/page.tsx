@@ -4,10 +4,10 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: { absolute: 'Contact Elite Custom Automotive | Lockport, LA' },
   description:
-    'Contact Elite Custom Automotive in Lockport, LA for a free quote on lift kits, engine rebuilds, transmission swap service, custom wheels and tires, and auto repair. Call (985) 258-1414 or send a message.',
+    'Contact Elite Custom Automotive in Lockport, LA for a free quote on lift kits, engine rebuilds, transmission swap service, custom wheels and tires, and auto repair. Call (985) 258-3831 or send a message.',
   openGraph: {
     title: 'Contact Elite Custom Automotive | Lockport, LA',
-    description: 'Get a free quote from Elite Custom Automotive. Call (985) 258-1414 or fill out our contact form.',
+    description: 'Get a free quote from Elite Custom Automotive. Call (985) 258-3831 or fill out our contact form.',
     url: 'https://elitecustomauto.co/contact',
   },
   alternates: { canonical: 'https://elitecustomauto.co/contact' },
@@ -22,7 +22,7 @@ const schema = {
   mainEntity: {
     '@type': 'LocalBusiness',
     name: 'Elite Custom Automotive LLC',
-    telephone: '+1-985-258-1414',
+    telephone: '+1-985-258-3831',
     email: 'elitecustomautollc@gmail.com',
     address: {
       '@type': 'PostalAddress',
@@ -76,8 +76,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-accent font-display uppercase tracking-widest text-xs mb-1">Phone</p>
-                    <a href="tel:+19852581414" className="text-chrome hover:text-accent-light transition-colors text-xl font-display tracking-wider">
-                      (985) 258-1414
+                    <a href="tel:+19852583831" className="text-chrome hover:text-accent-light transition-colors text-xl font-display tracking-wider">
+                      (985) 258-3831
                     </a>
                   </div>
                 </div>

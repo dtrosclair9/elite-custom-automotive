@@ -147,8 +147,8 @@ export default function GalleryPage() {
             <Link href="/contact" className="btn-accent">
               Get a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline">
+              Call (985) 258-3831
             </a>
           </div>
         </div>

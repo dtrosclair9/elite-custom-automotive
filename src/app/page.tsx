@@ -5,11 +5,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: { absolute: 'Elite Custom Automotive | Lift Kits & Auto Repair in Lockport, LA' },
   description:
-    "Lockport, LA's shop for custom lift kits, suspension, engine rebuilds, transmission swap service, custom wheels and tires, and full-service auto repair. Owner Colin Richard brings over a decade of custom shop experience from sister business CTR Pro Coat. Call (985) 258-1414.",
+    "Lockport, LA's shop for custom lift kits, suspension, engine rebuilds, transmission swap service, custom wheels and tires, and full-service auto repair. Owner Colin Richard brings over a decade of custom shop experience from sister business CTR Pro Coat. Call (985) 258-3831.",
   openGraph: {
     title: 'Elite Custom Automotive | Lift Kits & Auto Repair in Lockport, LA',
     description:
-      "Custom lift kits, engine rebuilds, transmission swap service, custom wheels and tires. Serving Lockport, Houma, Thibodaux and all of Lafourche & Terrebonne Parish. Call (985) 258-1414.",
+      "Custom lift kits, engine rebuilds, transmission swap service, custom wheels and tires. Serving Lockport, Houma, Thibodaux and all of Lafourche & Terrebonne Parish. Call (985) 258-3831.",
     url: 'https://elitecustomauto.co',
   },
   alternates: { canonical: 'https://elitecustomauto.co' },
@@ -105,7 +105,7 @@ const schema = {
       description:
         "Lockport, Louisiana's shop for custom lift kits, suspension upgrades, engine rebuilds, transmission swap service, custom wheels and tires, and full-service auto repair. Owned by Colin Richard, also the owner of CTR Pro Coat ceramic coating.",
       url: 'https://elitecustomauto.co',
-      telephone: '+1-985-258-1414',
+      telephone: '+1-985-258-3831',
       email: 'elitecustomautollc@gmail.com',
       image: 'https://elitecustomauto.co/images/logo.png',
       priceRange: '$$',
@@ -224,8 +224,8 @@ export default function HomePage() {
               <Link href="/contact" className="btn-accent text-base">
                 Get a Free Quote
               </Link>
-              <a href="tel:+19852581414" className="btn-outline text-base">
-                Call (985) 258-1414
+              <a href="tel:+19852583831" className="btn-outline text-base">
+                Call (985) 258-3831
               </a>
             </div>
           </div>
@@ -441,8 +441,8 @@ export default function HomePage() {
             <Link href="/contact" className="btn-accent text-base">
               Request a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline text-base">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline text-base">
+              Call (985) 258-3831
             </a>
           </div>
         </div>

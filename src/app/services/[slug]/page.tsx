@@ -48,7 +48,7 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
       '@type': 'LocalBusiness',
       '@id': 'https://elitecustomauto.co/#business',
       name: 'Elite Custom Automotive LLC',
-      telephone: '+1-985-258-1414',
+      telephone: '+1-985-258-3831',
       email: 'elitecustomautollc@gmail.com',
       url: 'https://elitecustomauto.co',
       address: {
@@ -132,8 +132,8 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline text-base">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline text-base">
+              Call (985) 258-3831
             </a>
           </div>
         </div>
@@ -326,8 +326,8 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline text-base">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline text-base">
+              Call (985) 258-3831
             </a>
           </div>
         </div>

@@ -186,8 +186,8 @@ export default function ServicesPage() {
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline text-base">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline text-base">
+              Call (985) 258-3831
             </a>
           </div>
         </div>

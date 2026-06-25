@@ -48,7 +48,7 @@ const schema = {
       jobTitle: 'Owner',
     },
     url: 'https://elitecustomauto.co',
-    telephone: '+1-985-258-1414',
+    telephone: '+1-985-258-3831',
     foundingDate: '2025-01',
   },
 }
@@ -241,8 +241,8 @@ export default function AboutPage() {
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
-            <a href="tel:+19852581414" className="btn-outline text-base">
-              Call (985) 258-1414
+            <a href="tel:+19852583831" className="btn-outline text-base">
+              Call (985) 258-3831
             </a>
           </div>
         </div>

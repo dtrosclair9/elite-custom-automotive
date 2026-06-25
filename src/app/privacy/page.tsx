@@ -99,7 +99,7 @@ export default function PrivacyPage() {
               <p className="text-chrome font-display uppercase tracking-wider mb-2">Elite Custom Automotive LLC</p>
               <p className="text-chrome-dark text-sm">5609 LA-1, Lockport, LA 70374</p>
               <p className="text-chrome-dark text-sm mt-2">
-                Phone: <a href="tel:+19852581414" className="text-accent hover:text-accent-light">(985) 258-1414</a>
+                Phone: <a href="tel:+19852583831" className="text-accent hover:text-accent-light">(985) 258-3831</a>
               </p>
               <p className="text-chrome-dark text-sm">
                 Email: <a href="mailto:elitecustomautollc@gmail.com" className="text-accent hover:text-accent-light">elitecustomautollc@gmail.com</a>
