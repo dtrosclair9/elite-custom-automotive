@@ -70,7 +70,7 @@ export default function GalleryPage() {
         <div className="container-wide text-center">
           <p className="section-label">Our Portfolio</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            Recent <span className="text-accent">Builds</span>
+            Recent <span className="text-accent-text">Builds</span>
           </h1>
           <p className="text-chrome-dark text-lg max-w-2xl mx-auto leading-relaxed">
             Lifted trucks, custom wheels, engine work, suspension installs, and ceramic coating from
@@ -120,7 +120,7 @@ export default function GalleryPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/20 to-transparent" />
                 </div>
                 <figcaption className="absolute bottom-0 left-0 right-0 px-5 py-4">
-                  <span className="inline-block text-accent text-xs font-display uppercase tracking-widest">
+                  <span className="inline-block text-accent-text text-xs font-display uppercase tracking-widest">
                     {photo.category}
                   </span>
                 </figcaption>
@@ -138,7 +138,7 @@ export default function GalleryPage() {
       <section className="bg-primary-dark section-padding text-center" aria-labelledby="gallery-cta-heading">
         <div className="container-wide">
           <h2 id="gallery-cta-heading" className="text-4xl md:text-5xl text-chrome mb-5">
-            Want Your Truck in <span className="text-accent">Our Gallery?</span>
+            Want Your Truck in <span className="text-accent-text">Our Gallery?</span>
           </h2>
           <p className="text-chrome-dark text-lg max-w-xl mx-auto mb-10">
             Bring it by, call us, or send a message. Free quotes, honest pricing, quality work.

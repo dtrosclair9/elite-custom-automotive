@@ -71,7 +71,7 @@ export default function Header() {
           <Link href="/" className="flex items-center shrink-0" aria-label="Elite Custom Automotive – Home">
             <span className="font-display uppercase tracking-widest leading-tight">
               <span className="block text-chrome text-base sm:text-lg">Elite Custom</span>
-              <span className="block text-accent text-base sm:text-lg">Automotive</span>
+              <span className="block text-accent-text text-base sm:text-lg">Automotive</span>
             </span>
           </Link>
 
@@ -80,7 +80,7 @@ export default function Header() {
             <Link
               href="/"
               className={`text-sm font-display uppercase tracking-wider transition-colors ${
-                pathname === '/' ? 'text-accent' : 'text-chrome hover:text-accent'
+                pathname === '/' ? 'text-accent-text' : 'text-chrome hover:text-accent-text'
               }`}
             >
               Home
@@ -92,7 +92,7 @@ export default function Header() {
                 onClick={() => setServicesOpen(!servicesOpen)}
                 onMouseEnter={() => setServicesOpen(true)}
                 className={`text-sm font-display uppercase tracking-wider transition-colors flex items-center gap-1 ${
-                  pathname.startsWith('/services') ? 'text-accent' : 'text-chrome hover:text-accent'
+                  pathname.startsWith('/services') ? 'text-accent-text' : 'text-chrome hover:text-accent-text'
                 }`}
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
@@ -111,7 +111,7 @@ export default function Header() {
                   <div className="grid grid-cols-3 gap-6">
                     {serviceMenu.map((group) => (
                       <div key={group.title}>
-                        <h3 className="text-accent text-xs font-bold uppercase tracking-widest mb-3 pb-2 border-b border-primary-light">
+                        <h3 className="text-accent-text text-xs font-bold uppercase tracking-widest mb-3 pb-2 border-b border-primary-light">
                           {group.title}
                         </h3>
                         <ul className="space-y-2">
@@ -119,7 +119,7 @@ export default function Header() {
                             <li key={c.href}>
                               <Link
                                 href={c.href}
-                                className="text-chrome hover:text-accent text-sm font-medium transition-colors block py-1"
+                                className="text-chrome hover:text-accent-text text-sm font-medium transition-colors block py-1"
                               >
                                 {c.city}, LA
                               </Link>
@@ -132,7 +132,7 @@ export default function Header() {
                   <div className="mt-5 pt-4 border-t border-primary-light text-center">
                     <Link
                       href="/services"
-                      className="text-chrome hover:text-accent text-sm font-display uppercase tracking-wider"
+                      className="text-chrome hover:text-accent-text text-sm font-display uppercase tracking-wider"
                     >
                       View All Services →
                     </Link>
@@ -144,7 +144,7 @@ export default function Header() {
             <Link
               href="/about"
               className={`text-sm font-display uppercase tracking-wider transition-colors ${
-                pathname === '/about' ? 'text-accent' : 'text-chrome hover:text-accent'
+                pathname === '/about' ? 'text-accent-text' : 'text-chrome hover:text-accent-text'
               }`}
             >
               About
@@ -153,7 +153,7 @@ export default function Header() {
             <Link
               href="/contact"
               className={`text-sm font-display uppercase tracking-wider transition-colors ${
-                pathname === '/contact' ? 'text-accent' : 'text-chrome hover:text-accent'
+                pathname === '/contact' ? 'text-accent-text' : 'text-chrome hover:text-accent-text'
               }`}
             >
               Contact
@@ -194,12 +194,12 @@ export default function Header() {
         {menuOpen && (
           <nav id="mobile-nav" className="lg:hidden border-t border-primary-light pb-6 pt-4" aria-label="Mobile navigation">
             <div className="flex flex-col gap-1">
-              <Link href="/" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent">
+              <Link href="/" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent-text">
                 Home
               </Link>
 
               <div className="px-3 py-2">
-                <p className="text-accent text-xs font-bold uppercase tracking-widest mb-2">Services</p>
+                <p className="text-accent-text text-xs font-bold uppercase tracking-widest mb-2">Services</p>
                 {serviceMenu.map((group) => (
                   <div key={group.title} className="mb-3">
                     <p className="text-chrome-dark text-xs font-semibold uppercase tracking-wider mb-1.5">
@@ -210,7 +210,7 @@ export default function Header() {
                         <Link
                           key={c.href}
                           href={c.href}
-                          className="text-chrome hover:text-accent text-sm py-1"
+                          className="text-chrome hover:text-accent-text text-sm py-1"
                         >
                           → {c.city}, LA
                         </Link>
@@ -220,16 +220,16 @@ export default function Header() {
                 ))}
                 <Link
                   href="/services"
-                  className="text-accent hover:text-accent-light text-sm font-display uppercase tracking-wider mt-2 inline-block"
+                  className="text-accent-text hover:text-accent-text text-sm font-display uppercase tracking-wider mt-2 inline-block"
                 >
                   View All Services
                 </Link>
               </div>
 
-              <Link href="/about" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent">
+              <Link href="/about" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent-text">
                 About
               </Link>
-              <Link href="/contact" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent">
+              <Link href="/contact" className="px-3 py-3 text-sm font-display uppercase tracking-wider text-chrome hover:text-accent-text">
                 Contact
               </Link>
               <a

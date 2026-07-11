@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <div className="container-wide text-center">
           <p className="section-label">Legal</p>
           <h1 className="text-4xl md:text-5xl font-display uppercase mt-3 mb-3">
-            Privacy <span className="text-accent">Policy</span>
+            Privacy <span className="text-accent-text">Policy</span>
           </h1>
           <p className="text-chrome-dark text-sm">Last updated: May 18, 2026</p>
         </div>
@@ -99,10 +99,10 @@ export default function PrivacyPage() {
               <p className="text-chrome font-display uppercase tracking-wider mb-2">Elite Custom Automotive LLC</p>
               <p className="text-chrome-dark text-sm">5609 LA-1, Lockport, LA 70374</p>
               <p className="text-chrome-dark text-sm mt-2">
-                Phone: <a href="tel:+19852583831" className="text-accent hover:text-accent-light">(985) 258-3831</a>
+                Phone: <a href="tel:+19852583831" className="text-accent-text hover:text-chrome-light transition-colors">(985) 258-3831</a>
               </p>
               <p className="text-chrome-dark text-sm">
-                Email: <a href="mailto:elitecustomautollc@gmail.com" className="text-accent hover:text-accent-light">elitecustomautollc@gmail.com</a>
+                Email: <a href="mailto:elitecustomautollc@gmail.com" className="text-accent-text hover:text-chrome-light transition-colors">elitecustomautollc@gmail.com</a>
               </p>
             </div>
 

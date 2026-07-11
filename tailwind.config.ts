@@ -18,6 +18,10 @@ const config: Config = {
           DEFAULT: '#2456C7',
           light: '#4A7AE0',
           dark: '#1A3E96',
+          // Accessible electric-blue used for accent-colored TEXT on dark
+          // backgrounds. Passes WCAG AA (>=4.5:1) on primary, primary.light,
+          // and primary.dark. Keep #2456C7 for fills/buttons/borders.
+          text: '#5C8DEF',
         },
         chrome: {
           DEFAULT: '#C0C5CC',

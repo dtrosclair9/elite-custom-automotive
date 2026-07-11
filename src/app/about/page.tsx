@@ -68,7 +68,7 @@ export default function AboutPage() {
         <div className="container-wide text-center">
           <p className="section-label">Our Story</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            About <span className="text-accent">Elite</span>
+            About <span className="text-accent-text">Elite</span>
           </h1>
           <p className="text-chrome-dark text-lg max-w-2xl mx-auto leading-relaxed">
             A locally owned custom shop built on hard work, honest diagnostics, and a real passion for
@@ -91,7 +91,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/85 via-primary-dark/10 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-accent font-display uppercase tracking-widest text-xs">Lockport, LA</p>
+                <p className="text-accent-text font-display uppercase tracking-widest text-xs">Lockport, LA</p>
                 <p className="text-chrome font-display uppercase tracking-wider text-2xl">Colin Richard, Owner</p>
                 <p className="text-chrome-dark text-sm mt-1">Husband, father of two, and lifelong gearhead.</p>
               </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
               <p className="section-label">Why It Started</p>
               <h2 id="dream-heading" className="text-4xl md:text-5xl text-chrome font-display uppercase mt-3 mb-7 leading-tight">
                 It All Starts<br />
-                <span className="text-accent">With a Dream</span>
+                <span className="text-accent-text">With a Dream</span>
               </h2>
               <div className="space-y-4 text-chrome-dark leading-relaxed">
                 <p>
@@ -190,14 +190,14 @@ export default function AboutPage() {
           <div className="text-center mb-14 max-w-2xl mx-auto">
             <p className="section-label">How We Work</p>
             <h2 id="values-heading" className="text-4xl md:text-5xl text-chrome mt-3">
-              Our Core <span className="text-accent">Values</span>
+              Our Core <span className="text-accent-text">Values</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((value, i) => (
               <article key={value.title} className="bg-primary border border-primary-light rounded-sm p-8">
-                <p className="text-accent font-display uppercase tracking-widest text-xs mb-3">
+                <p className="text-accent-text font-display uppercase tracking-widest text-xs mb-3">
                   {String(i + 1).padStart(2, '0')}
                 </p>
                 <h3 className="text-chrome text-xl mb-3">{value.title}</h3>
@@ -213,7 +213,7 @@ export default function AboutPage() {
         <div className="container-wide text-center">
           <p className="section-label">Where We Work</p>
           <h2 id="service-area-heading" className="text-4xl md:text-5xl text-chrome mt-3 mb-6">
-            Serving <span className="text-accent">Bayou Country</span>
+            Serving <span className="text-accent-text">Bayou Country</span>
           </h2>
           <p className="text-chrome-dark max-w-2xl mx-auto mb-10 leading-relaxed">
             Elite Custom Automotive is based at <strong className="text-chrome">5609 LA-1, Lockport, LA</strong> and
@@ -233,7 +233,7 @@ export default function AboutPage() {
       <section className="bg-primary-dark section-padding text-center" aria-labelledby="about-cta-heading">
         <div className="container-wide">
           <h2 id="about-cta-heading" className="text-4xl md:text-5xl text-chrome mb-5">
-            Let&apos;s Build <span className="text-accent">Something</span>
+            Let&apos;s Build <span className="text-accent-text">Something</span>
           </h2>
           <p className="text-chrome-dark text-lg max-w-xl mx-auto mb-10">
             Whether it&apos;s a leveling kit, a full custom build, or a major engine rebuild — Colin and the team

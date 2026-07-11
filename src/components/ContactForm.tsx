@@ -42,7 +42,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="name" className="block text-sm font-display uppercase tracking-wider text-chrome mb-1.5">
-            Full Name <span className="text-accent" aria-hidden="true">*</span>
+            Full Name <span className="text-accent-text" aria-hidden="true">*</span>
           </label>
           <input
             id="name"
@@ -71,7 +71,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="email" className="block text-sm font-display uppercase tracking-wider text-chrome mb-1.5">
-          Email <span className="text-accent" aria-hidden="true">*</span>
+          Email <span className="text-accent-text" aria-hidden="true">*</span>
         </label>
         <input
           id="email"
@@ -121,7 +121,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="referral_source" className="block text-sm font-display uppercase tracking-wider text-chrome mb-1.5">
-          How Did You Find Us? <span className="text-accent" aria-hidden="true">*</span>
+          How Did You Find Us? <span className="text-accent-text" aria-hidden="true">*</span>
         </label>
         <select
           id="referral_source"
@@ -143,7 +143,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="message" className="block text-sm font-display uppercase tracking-wider text-chrome mb-1.5">
-          Tell Us About Your Project <span className="text-accent" aria-hidden="true">*</span>
+          Tell Us About Your Project <span className="text-accent-text" aria-hidden="true">*</span>
         </label>
         <textarea
           id="message"

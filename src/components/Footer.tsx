@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="font-display uppercase tracking-widest text-chrome leading-tight">
                 Elite Custom
                 <br />
-                <span className="text-accent">Automotive</span>
+                <span className="text-accent-text">Automotive</span>
               </div>
             </div>
             <p className="text-chrome-dark text-sm leading-relaxed max-w-sm mb-4">
@@ -52,7 +52,7 @@ export default function Footer() {
               href="https://www.facebook.com/profile.php?id=61573142575763"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-5 text-chrome-dark hover:text-accent transition-colors text-sm font-display uppercase tracking-wider"
+              className="inline-flex items-center gap-2 mt-5 text-chrome-dark hover:text-accent-text transition-colors text-sm font-display uppercase tracking-wider"
               aria-label="Elite Custom Automotive on Facebook"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,11 +64,11 @@ export default function Footer() {
 
           {/* Lift Kits */}
           <div>
-            <h3 className="text-accent font-display uppercase tracking-widest text-xs mb-4">Lift Kits</h3>
+            <h3 className="text-accent-text font-display uppercase tracking-widest text-xs mb-4">Lift Kits</h3>
             <ul className="space-y-2">
               {liftKitLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-chrome-dark hover:text-accent text-sm transition-colors">
+                  <Link href={link.href} className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
                     {link.label}, LA
                   </Link>
                 </li>
@@ -78,11 +78,11 @@ export default function Footer() {
 
           {/* Engine & Trans */}
           <div>
-            <h3 className="text-accent font-display uppercase tracking-widest text-xs mb-4">Engine & Trans</h3>
+            <h3 className="text-accent-text font-display uppercase tracking-widest text-xs mb-4">Engine & Trans</h3>
             <ul className="space-y-2">
               {engineLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-chrome-dark hover:text-accent text-sm transition-colors">
+                  <Link href={link.href} className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
                     {link.label}, LA
                   </Link>
                 </li>
@@ -92,43 +92,48 @@ export default function Footer() {
 
           {/* Wheels & Tires + Contact */}
           <div>
-            <h3 className="text-accent font-display uppercase tracking-widest text-xs mb-4">Wheels & Tires</h3>
+            <h3 className="text-accent-text font-display uppercase tracking-widest text-xs mb-4">Wheels & Tires</h3>
             <ul className="space-y-2 mb-6">
               {wheelsLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-chrome-dark hover:text-accent text-sm transition-colors">
+                  <Link href={link.href} className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
                     {link.label}, LA
                   </Link>
                 </li>
               ))}
             </ul>
 
-            <h3 className="text-accent font-display uppercase tracking-widest text-xs mb-3">Contact</h3>
+            <h3 className="text-accent-text font-display uppercase tracking-widest text-xs mb-3">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="tel:+19852583831" className="text-chrome-dark hover:text-accent transition-colors flex items-center gap-2">
-                  <svg className="w-4 h-4 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <a href="tel:+19852583831" className="text-chrome-dark hover:text-accent-text transition-colors flex items-center gap-2">
+                  <svg className="w-4 h-4 text-accent-text shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   (985) 258-3831
                 </a>
               </li>
               <li>
-                <a href="mailto:elitecustomautollc@gmail.com" className="text-chrome-dark hover:text-accent transition-colors flex items-start gap-2 break-all">
-                  <svg className="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <a href="mailto:elitecustomautollc@gmail.com" className="text-chrome-dark hover:text-accent-text transition-colors flex items-start gap-2 break-all">
+                  <svg className="w-4 h-4 text-accent-text shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <span className="text-xs">elitecustomautollc@gmail.com</span>
                 </a>
               </li>
               <li>
-                <Link href="/gallery" className="text-chrome-dark hover:text-accent text-sm transition-colors">
+                <Link href="/gallery" className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
                   View Our Builds
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-chrome-dark hover:text-accent text-sm transition-colors">
+                <Link href="/privacy" className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/accessibility" className="text-chrome-dark hover:text-accent-text text-sm transition-colors">
+                  Accessibility
                 </Link>
               </li>
             </ul>

@@ -204,7 +204,7 @@ export default function HomePage() {
             </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-chrome uppercase leading-[0.95] tracking-tight">
               Custom Lift Kits<br />
-              <span className="text-accent">& Truck Builds</span><br />
+              <span className="text-accent-text">& Truck Builds</span><br />
               <span className="text-chrome-light">in Lockport, LA</span>
             </h1>
             <p className="mt-7 text-lg md:text-xl text-chrome-dark max-w-2xl leading-relaxed font-light">
@@ -264,13 +264,13 @@ export default function HomePage() {
                 href={service.href}
                 className="group bg-primary-light border border-primary-light hover:border-accent rounded-sm p-8 transition-all duration-200 block"
               >
-                <div className="text-accent mb-5 group-hover:scale-110 transition-transform duration-200">
+                <div className="text-accent-text mb-5 group-hover:scale-110 transition-transform duration-200">
                   {service.icon}
                 </div>
                 <h3 className="text-chrome text-2xl mb-1">{service.title}</h3>
-                <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-4">{service.tagline}</p>
+                <p className="text-accent-text text-xs font-semibold uppercase tracking-widest mb-4">{service.tagline}</p>
                 <p className="text-chrome-dark text-sm leading-relaxed mb-6">{service.description}</p>
-                <span className="text-accent font-display uppercase tracking-wider text-sm group-hover:text-accent-light transition-colors inline-flex items-center gap-2">
+                <span className="text-accent-text font-display uppercase tracking-wider text-sm group-hover:text-chrome-light transition-colors inline-flex items-center gap-2">
                   Learn More
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -335,7 +335,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-accent font-display uppercase tracking-widest text-xs">Lockport, LA</p>
+                <p className="text-accent-text font-display uppercase tracking-widest text-xs">Lockport, LA</p>
                 <p className="text-chrome font-display uppercase tracking-wider text-2xl">Colin Richard, Owner</p>
               </div>
             </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
               <p className="section-label">About Elite</p>
               <h2 id="about-snippet-heading" className="text-4xl md:text-5xl text-chrome mt-3 mb-6">
                 Built by Locals,<br />
-                <span className="text-accent">Trusted by Truck Owners</span>
+                <span className="text-accent-text">Trusted by Truck Owners</span>
               </h2>
               <p className="text-chrome-dark leading-relaxed mb-4">
                 <strong className="text-chrome">Colin Richard</strong> opened Elite Custom Automotive in January 2025,
@@ -378,9 +378,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {reviews.map((r) => (
               <article key={r.name} className="bg-primary border border-primary-light rounded-sm p-7">
-                <div className="flex items-center gap-1 mb-4" aria-label={`${r.rating} star rating`}>
+                <div className="flex items-center gap-1 mb-4" role="img" aria-label={`${r.rating} star rating`}>
                   {Array.from({ length: r.rating }).map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <svg key={i} className="w-5 h-5 text-accent-text" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -422,7 +422,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-accent-dark/30 to-transparent" />
         <div className="relative container-wide text-center">
           <h2 id="cta-heading" className="text-4xl md:text-5xl text-chrome mb-5">
-            Ready to <span className="text-accent">Build Something?</span>
+            Ready to <span className="text-accent-text">Build Something?</span>
           </h2>
           <p className="text-chrome-dark text-lg max-w-xl mx-auto mb-10">
             Whether it&apos;s a 2&quot; leveling kit or a full ground-up custom build, the Elite team has you covered.
