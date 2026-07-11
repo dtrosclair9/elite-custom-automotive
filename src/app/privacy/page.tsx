@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: { absolute: 'Privacy Policy | Elite Custom Automotive' },
   description:
-    'Privacy policy for Elite Custom Automotive in Lockport, LA. How we collect, use, and protect information submitted through our website.',
+    'Privacy policy for Elite Custom Automotive in Lockport, LA. What information our website collects, how we use it, and the third-party services we rely on.',
   alternates: { canonical: 'https://elitecustomauto.co/privacy' },
   robots: { index: true, follow: true },
 }

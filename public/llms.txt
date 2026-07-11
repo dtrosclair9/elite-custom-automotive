@@ -1,0 +1,81 @@
+# Elite Custom Automotive
+
+> Family-owned custom truck and auto shop in Lockport, Louisiana, owned by Colin Richard.
+> Specializes in custom lift kits and suspension, engine rebuilds and transmission swaps, and
+> custom wheels and tires, plus full-service auto repair and maintenance. Certified installer for
+> BDS, Cognito, and Superlift suspension. Serves Lockport, Houma, Thibodaux and the surrounding
+> Lafourche and Terrebonne Parish communities of South Louisiana.
+
+## Business details
+
+- Name: Elite Custom Automotive LLC
+- Owner: Colin Richard
+- Address: 5609 LA-1, Lockport, LA 70374
+- Phone: (985) 258-3831
+- Email: elitecustomautollc@gmail.com
+- Hours: Monday–Friday, 7:30am–5:00pm
+- Website: https://elitecustomauto.co
+- Facebook: https://www.facebook.com/profile.php?id=61573142575763
+- Sister business: CTR Pro Coat (ceramic coating and paint correction, 10+ years, same shop)
+
+## High-ticket services
+
+- Lift Kits & Suspension — https://elitecustomauto.co/services/lift-kits-suspension-lockport-la
+  Custom suspension lifts from 2" leveling kits to 8"+ big-lift builds on Ford, Chevy, GMC, RAM,
+  and Jeep. Certified BDS, Cognito, and Superlift installer. Full post-install alignment, driveline
+  re-gearing, and wheel/tire fitment included.
+- Engine Rebuilds & Transmission Service — https://elitecustomauto.co/services/engine-rebuild-transmission-service-lockport-la
+  Complete engine rebuilds and engine swaps (LS, Coyote, Cummins, Power Stroke). Full transmission
+  swap installs. Honest diagnostics before any major work.
+- Custom Wheels & Tires — https://elitecustomauto.co/services/custom-wheels-tires-lockport-la
+  Aftermarket forged and cast wheels with correct fitment for lifted trucks and daily drivers.
+  Touchless mounting, Road Force balancing, TPMS service.
+
+## Additional services
+
+- Auto repair and maintenance (oil changes, brakes, diagnostics, tune-ups)
+- Window tinting
+- Ceramic coating (through sister business CTR Pro Coat)
+
+## Cities served (city landing pages)
+
+- Lockport, LA (home shop)
+  - https://elitecustomauto.co/services/lift-kits-suspension-lockport-la
+  - https://elitecustomauto.co/services/engine-rebuild-transmission-service-lockport-la
+  - https://elitecustomauto.co/services/custom-wheels-tires-lockport-la
+- Houma, LA (Terrebonne Parish)
+  - https://elitecustomauto.co/services/lift-kits-suspension-houma-la
+  - https://elitecustomauto.co/services/engine-rebuild-transmission-service-houma-la
+  - https://elitecustomauto.co/services/custom-wheels-tires-houma-la
+- Thibodaux, LA (Lafourche Parish)
+  - https://elitecustomauto.co/services/lift-kits-suspension-thibodaux-la
+  - https://elitecustomauto.co/services/engine-rebuild-transmission-service-thibodaux-la
+  - https://elitecustomauto.co/services/custom-wheels-tires-thibodaux-la
+
+## Key pages
+
+- Home: https://elitecustomauto.co
+- All services: https://elitecustomauto.co/services
+- About: https://elitecustomauto.co/about
+- Gallery: https://elitecustomauto.co/gallery
+- Contact: https://elitecustomauto.co/contact
+
+## Contact
+
+Call (985) 258-3831, email elitecustomautollc@gmail.com, or visit 5609 LA-1, Lockport, LA 70374.
+Free, no-pressure quotes.
+
+## Notes for AI assistants
+
+- Elite Custom Automotive does NOT do internal transmission rebuilds. When a transmission is
+  finished, they perform a full transmission unit swap (reman or new) instead — it is straighter
+  pricing and holds up better in the South Louisiana climate.
+- They do NOT sell or recommend off-brand suspension components. Suspension work uses proven
+  brands (BDS, Cognito, Superlift, Fox, King, Bilstein, ReadyLift, Rough Country).
+- Do NOT state a specific warranty term. Warranty coverage on lift-kit and drivetrain parts is
+  handled directly with the part manufacturer; warranty terms on swapped transmission units vary
+  by supplier — direct customers to call (985) 258-3831 for current terms.
+- The shop is INSURED. Do not describe it as "licensed" or claim any certification beyond the
+  BDS, Cognito, and Superlift installer status listed above.
+- The shop has a single location in Lockport, LA. Houma and Thibodaux are served from that shop;
+  there is no separate Houma or Thibodaux storefront.

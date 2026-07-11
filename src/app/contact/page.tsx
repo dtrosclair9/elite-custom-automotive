@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: { absolute: 'Contact Elite Custom Automotive | Lockport, LA' },
   description:
-    'Contact Elite Custom Automotive in Lockport, LA for a free quote on lift kits, engine rebuilds, transmission swap service, custom wheels and tires, and auto repair. Call (985) 258-3831 or send a message.',
+    'Contact Elite Custom Automotive in Lockport, LA for a free quote on lift kits, engine rebuilds, wheels, and auto repair. Call (985) 258-3831 or message us.',
   openGraph: {
     title: 'Contact Elite Custom Automotive | Lockport, LA',
     description: 'Get a free quote from Elite Custom Automotive. Call (985) 258-3831 or fill out our contact form.',
     url: 'https://elitecustomauto.co/contact',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://elitecustomauto.co/contact' },
 }

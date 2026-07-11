@@ -2,16 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { serviceMeta, pageContent } from './[slug]/content'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: { absolute: 'Services in Lockport, LA | Lift Kits, Engine Rebuilds, Custom Wheels | Elite Custom Automotive' },
   description:
-    'Elite Custom Automotive offers custom lift kits, engine rebuilds, transmission swap service, custom wheels and tires, window tinting, ceramic coating, and full-service auto repair in Lockport, Houma, and Thibodaux, LA.',
+    'Custom lift kits, engine rebuilds, transmission swaps, custom wheels and tires, and auto repair in Lockport, Houma, and Thibodaux, LA. Call (985) 258-3831.',
   openGraph: {
     title: 'Services | Elite Custom Automotive in Lockport, LA',
     description:
       'Custom lift kits, engine rebuilds, transmission swap service, custom wheels and tires, window tinting, ceramic coating. Serving Lockport, Houma, Thibodaux and all of Lafourche & Terrebonne Parish.',
     url: 'https://elitecustomauto.co/services',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://elitecustomauto.co/services' },
 }

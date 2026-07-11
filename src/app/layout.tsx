@@ -3,6 +3,7 @@ import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { ogImage } from '@/lib/site'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | Elite Custom Automotive',
   },
   description:
-    "Elite Custom Automotive is Lockport, Louisiana's shop for custom lift kits, suspension, engine rebuilds, transmission swap service, custom wheels and tires, and full-service auto repair. Backed by over a decade of finishing experience from sister business CTR Pro Coat.",
+    'Lockport, LA shop for custom lift kits, suspension, engine rebuilds, transmission swaps, and custom wheels and tires. Honest work. Call (985) 258-3831.',
   keywords: [
     'lift kits Lockport LA',
     'custom lift kit installation Louisiana',
@@ -41,14 +42,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://elitecustomauto.co',
     siteName: 'Elite Custom Automotive',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Elite Custom Automotive – Lockport, LA',
-      },
-    ],
+    images: [ogImage],
   },
   twitter: {
     card: 'summary_large_image',

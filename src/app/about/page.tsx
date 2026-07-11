@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: { absolute: 'About Elite Custom Automotive | Meet Colin Richard' },
   description:
-    'Elite Custom Automotive is owned and operated by Colin Richard in Lockport, Louisiana. Custom lift kits, engine rebuilds, and full-service auto repair for Lafourche and Terrebonne Parish — backed by a decade of finishing experience from sister business CTR Pro Coat.',
+    'Meet Colin Richard, owner of Elite Custom Automotive in Lockport, LA. Custom lift kits, engine rebuilds, and honest auto repair across Lafourche Parish.',
   openGraph: {
     title: 'About Elite Custom Automotive | Lockport, LA',
     description:
       'Meet Colin Richard, owner of Elite Custom Automotive in Lockport, LA — and owner of CTR Pro Coat ceramic coating. Over a decade of custom shop experience in Lafourche and Terrebonne Parish.',
     url: 'https://elitecustomauto.co/about',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://elitecustomauto.co/about' },
 }

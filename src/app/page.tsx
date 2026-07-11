@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ogImage } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: { absolute: 'Elite Custom Automotive | Lift Kits & Auto Repair in Lockport, LA' },
   description:
-    "Lockport, LA's shop for custom lift kits, suspension, engine rebuilds, transmission swap service, custom wheels and tires, and full-service auto repair. Owner Colin Richard brings over a decade of custom shop experience from sister business CTR Pro Coat. Call (985) 258-3831.",
+    'Lockport, LA shop for custom lift kits, engine rebuilds, transmission swaps, and custom wheels and tires. Honest work from owner Colin Richard. Call now.',
   openGraph: {
     title: 'Elite Custom Automotive | Lift Kits & Auto Repair in Lockport, LA',
     description:
       "Custom lift kits, engine rebuilds, transmission swap service, custom wheels and tires. Serving Lockport, Houma, Thibodaux and all of Lafourche & Terrebonne Parish. Call (985) 258-3831.",
     url: 'https://elitecustomauto.co',
+    images: [ogImage],
   },
   alternates: { canonical: 'https://elitecustomauto.co' },
 }
@@ -152,17 +154,6 @@ const schema = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ceramic Coating' } },
         ],
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '4',
-      },
-      review: reviews.map((r) => ({
-        '@type': 'Review',
-        author: { '@type': 'Person', name: r.name },
-        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
-        reviewBody: r.body,
-      })),
     },
     {
       '@type': 'WebSite',

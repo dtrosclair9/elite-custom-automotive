@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { pageContent, serviceMeta, cityMeta, getServicePage } from './content'
+import { ogImage } from '@/lib/site'
 
 export function generateStaticParams() {
   return pageContent.map((p) => ({ slug: p.slug }))
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: data.metaDescription,
       url,
       type: 'website',
+      images: [ogImage],
     },
   }
 }
