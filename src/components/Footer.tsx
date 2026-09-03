@@ -142,7 +142,12 @@ export default function Footer() {
 
         <div className="border-t border-primary-light mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-chrome-dark">
           <p>&copy; {new Date().getFullYear()} Elite Custom Automotive LLC. All rights reserved.</p>
-          <p>Lockport, Louisiana | Lafourche & Terrebonne Parish</p>
+          <p>
+            Lockport, Louisiana | Lafourche & Terrebonne Parish |{' '}
+            <a href="https://strykora.com" target="_blank" rel="noopener" className="hover:text-white transition-colors">
+              Website by Strykora
+            </a>
+          </p>
         </div>
       </div>
     </footer>
