@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ogImage } from '@/lib/site'
+import ScheduleButton from '@/components/ScheduleButton'
 
 export const metadata: Metadata = {
   title: { absolute: 'Elite Custom Automotive | Lift Kits & Auto Repair in Lockport, LA' },
@@ -215,6 +216,7 @@ export default function HomePage() {
               <Link href="/contact" className="btn-accent text-base">
                 Get a Free Quote
               </Link>
+              <ScheduleButton />
               <a href="tel:+19852583831" className="btn-outline text-base">
                 Call (985) 258-3831
               </a>
@@ -432,6 +434,7 @@ export default function HomePage() {
             <Link href="/contact" className="btn-accent text-base">
               Request a Free Quote
             </Link>
+            <ScheduleButton />
             <a href="tel:+19852583831" className="btn-outline text-base">
               Call (985) 258-3831
             </a>

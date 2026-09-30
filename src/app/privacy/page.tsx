@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl md:text-5xl font-display uppercase mt-3 mb-3">
             Privacy <span className="text-accent-text">Policy</span>
           </h1>
-          <p className="text-chrome-dark text-sm">Last updated: May 18, 2026</p>
+          <p className="text-chrome-dark text-sm">Last updated: September 30, 2026</p>
         </div>
       </section>
 
@@ -65,6 +65,11 @@ export default function PrivacyPage() {
                 <strong className="text-chrome">Formspree</strong> — processes contact form submissions and forwards them to our business email.
               </li>
               <li>
+                <strong className="text-chrome">AutoOps</strong> — powers our online appointment scheduler. When you book, the
+                details you enter (such as your name, contact info, vehicle, and requested service) are collected and
+                processed by AutoOps. The scheduler may use cookies and report booking activity to Google Analytics.
+              </li>
+              <li>
                 <strong className="text-chrome">Vercel</strong> — hosts the website. Vercel collects standard server-level technical data.
               </li>
               <li>
@@ -78,7 +83,8 @@ export default function PrivacyPage() {
             <h2 className="text-chrome text-2xl font-display uppercase tracking-wide mt-10 mb-4">Cookies &amp; Tracking</h2>
             <p className="text-chrome-dark leading-relaxed">
               This website does not use marketing or advertising cookies. Some basic cookies may be used by the
-              third-party services listed above to keep the site functional.
+              third-party services listed above to keep the site functional, and the AutoOps scheduler may use
+              cookies and analytics to track appointment bookings.
             </p>
 
             <h2 className="text-chrome text-2xl font-display uppercase tracking-wide mt-10 mb-4">Data Retention</h2>

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ScheduleButton from '@/components/ScheduleButton'
 
 const photos = [
   // Lifted Trucks — finished builds
@@ -147,6 +148,7 @@ export default function GalleryPage() {
             <Link href="/contact" className="btn-accent">
               Get a Free Quote
             </Link>
+            <ScheduleButton />
             <a href="tel:+19852583831" className="btn-outline">
               Call (985) 258-3831
             </a>

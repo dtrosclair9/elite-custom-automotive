@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { serviceMeta, pageContent } from './[slug]/content'
 import { ogImage } from '@/lib/site'
+import ScheduleButton from '@/components/ScheduleButton'
 
 export const metadata: Metadata = {
   title: { absolute: 'Services in Lockport, LA | Lift Kits, Engine Rebuilds, Custom Wheels | Elite Custom Automotive' },
@@ -188,6 +189,7 @@ export default function ServicesPage() {
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
+            <ScheduleButton />
             <a href="tel:+19852583831" className="btn-outline text-base">
               Call (985) 258-3831
             </a>

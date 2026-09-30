@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { pageContent, serviceMeta, cityMeta, getServicePage } from './content'
 import { ogImage } from '@/lib/site'
+import ScheduleButton from '@/components/ScheduleButton'
 
 export function generateStaticParams() {
   return pageContent.map((p) => ({ slug: p.slug }))
@@ -134,6 +135,7 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
+            <ScheduleButton />
             <a href="tel:+19852583831" className="btn-outline text-base">
               Call (985) 258-3831
             </a>
@@ -328,6 +330,7 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
             <Link href="/contact" className="btn-accent text-base">
               Get a Free Quote
             </Link>
+            <ScheduleButton />
             <a href="tel:+19852583831" className="btn-outline text-base">
               Call (985) 258-3831
             </a>

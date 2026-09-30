@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
@@ -74,6 +75,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        {/* AutoOps online scheduler. Opened by <ScheduleButton />; also supports ?ao_auto_show=true */}
+        <Script
+          id="portal-scripts"
+          src="https://portal.autoops.com/portal-scripts.js"
+          data-api-key="51d35eb4f8014b8b8d5bc03b50ab0fa7"
+          data-google-analytics-enabled="true"
+          data-loading-color="000000"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

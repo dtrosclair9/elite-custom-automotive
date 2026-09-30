@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 import { ogImage } from '@/lib/site'
+import ScheduleButton from '@/components/ScheduleButton'
 
 export const metadata: Metadata = {
   title: { absolute: 'Contact Elite Custom Automotive | Lockport, LA' },
@@ -145,7 +146,15 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-10 bg-primary-light border border-primary-light rounded-sm p-6">
+              <div className="mt-10 bg-primary-light border border-accent/40 rounded-sm p-6">
+                <h3 className="text-chrome font-display uppercase tracking-wider text-base mb-2">Book Online</h3>
+                <p className="text-chrome-dark text-sm leading-relaxed mb-5">
+                  Know what you need? Pick a time and schedule your service online.
+                </p>
+                <ScheduleButton className="btn-accent">Schedule Service</ScheduleButton>
+              </div>
+
+              <div className="mt-6 bg-primary-light border border-primary-light rounded-sm p-6">
                 <h3 className="text-chrome font-display uppercase tracking-wider text-base mb-2">Free Quotes</h3>
                 <p className="text-chrome-dark text-sm leading-relaxed">
                   Every quote is free and honest. Colin walks through your truck or vehicle, listens to what you want,
