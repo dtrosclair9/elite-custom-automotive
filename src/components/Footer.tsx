@@ -45,7 +45,7 @@ export default function Footer() {
               custom wheels and tires, and full-service auto repair. Owned by Colin Richard — also the owner of CTR Pro Coat ceramic coating.
             </p>
             <address className="not-italic text-sm space-y-1 text-chrome-dark">
-              <p>5609 LA-1, Lockport, LA 70374</p>
+              <p>5609 Hwy 1, Lockport, LA 70374</p>
               <p>Mon–Fri 7:30am – 5:00pm</p>
             </address>
             <a

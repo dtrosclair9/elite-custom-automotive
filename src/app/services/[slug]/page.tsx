@@ -56,7 +56,7 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
       url: 'https://elitecustomauto.co',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5609 LA-1',
+        streetAddress: '5609 Hwy 1',
         addressLocality: 'Lockport',
         addressRegion: 'LA',
         postalCode: '70374',

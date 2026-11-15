@@ -114,7 +114,7 @@ const schema = {
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '5609 LA-1',
+        streetAddress: '5609 Hwy 1',
         addressLocality: 'Lockport',
         addressRegion: 'LA',
         postalCode: '70374',
@@ -406,7 +406,7 @@ export default function HomePage() {
             Serving All of Bayou Country
           </h2>
           <p className="text-chrome-dark max-w-2xl mx-auto mb-10 leading-relaxed">
-            Based in Lockport at 5609 LA-1, Elite Custom Automotive serves truck owners and drivers across
+            Based in Lockport at 5609 Hwy 1, Elite Custom Automotive serves truck owners and drivers across
             Lafourche and Terrebonne Parish.
           </p>
           <div className="flex flex-wrap gap-3 justify-center text-sm font-display uppercase tracking-wider">

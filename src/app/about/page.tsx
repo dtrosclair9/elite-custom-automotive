@@ -217,7 +217,7 @@ export default function AboutPage() {
             Serving <span className="text-accent-text">Bayou Country</span>
           </h2>
           <p className="text-chrome-dark max-w-2xl mx-auto mb-10 leading-relaxed">
-            Elite Custom Automotive is based at <strong className="text-chrome">5609 LA-1, Lockport, LA</strong> and
+            Elite Custom Automotive is based at <strong className="text-chrome">5609 Hwy 1, Lockport, LA</strong> and
             serves truck owners and drivers throughout Lafourche and Terrebonne Parish.
           </p>
           <div className="flex flex-wrap gap-3 justify-center text-sm font-display uppercase tracking-wider">

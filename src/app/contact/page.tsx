@@ -29,7 +29,7 @@ const schema = {
     email: 'elitecustomautollc@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5609 LA-1',
+      streetAddress: '5609 Hwy 1',
       addressLocality: 'Lockport',
       addressRegion: 'LA',
       postalCode: '70374',
@@ -108,7 +108,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-accent-text font-display uppercase tracking-widest text-xs mb-1">Shop Location</p>
-                    <p className="text-chrome">5609 LA-1, Lockport, LA 70374</p>
+                    <p className="text-chrome">5609 Hwy 1, Lockport, LA 70374</p>
                     <p className="text-chrome-dark text-sm mt-1">Serving Lafourche &amp; Terrebonne Parish</p>
                   </div>
                 </div>

@@ -103,7 +103,7 @@ export default function PrivacyPage() {
             <p className="text-chrome-dark leading-relaxed">For privacy questions, reach us at:</p>
             <div className="bg-primary-light border border-primary-light rounded-sm p-6 mt-4 not-prose">
               <p className="text-chrome font-display uppercase tracking-wider mb-2">Elite Custom Automotive LLC</p>
-              <p className="text-chrome-dark text-sm">5609 LA-1, Lockport, LA 70374</p>
+              <p className="text-chrome-dark text-sm">5609 Hwy 1, Lockport, LA 70374</p>
               <p className="text-chrome-dark text-sm mt-2">
                 Phone: <a href="tel:+19852583831" className="text-accent-text hover:text-chrome-light transition-colors">(985) 258-3831</a>
               </p>
