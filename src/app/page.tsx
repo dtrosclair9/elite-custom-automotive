@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import BackgroundVideo from '@/components/BackgroundVideo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ogImage } from '@/lib/site'
@@ -177,17 +178,13 @@ export default function HomePage() {
       {/* ── HERO ────────────────────────────────────────────────── */}
       <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-primary-dark" aria-label="Hero">
         {/* Video background — falls back to poster image if video missing */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <BackgroundVideo
+          fill
+          src="/videos/hero.mp4"
           poster="/images/hero-poster.jpg"
-          className="absolute inset-0 w-full h-full object-cover object-[center_65%] [filter:contrast(1.08)_saturate(1.12)_brightness(1.04)]"
-          aria-hidden="true"
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+          className="object-cover object-[center_65%] [filter:contrast(1.08)_saturate(1.12)_brightness(1.04)]"
+          buttonClassName="bottom-5 right-5"
+        />
 
         {/* Left-anchored fade for text legibility — keeps right two-thirds clean */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,8,11,0.95)_0%,rgba(6,8,11,0.82)_35%,rgba(6,8,11,0.45)_55%,transparent_75%)]" />

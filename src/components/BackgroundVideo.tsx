@@ -1,0 +1,107 @@
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+
+/**
+ * Decorative looping video that meets WCAG 2.2.2 Pause, Stop, Hide (Level A).
+ *
+ * A looping autoplay video is moving content that starts by itself, lasts over 5 seconds and sits beside other
+ * content, so it needs a visible way to pause it. This gives a real button (keyboard reachable, labelled,
+ * 44px target). It also skips autoplay when the visitor's device asks for reduced motion, and remembers a
+ * pause for the rest of the visit. The reduced-motion check is extra: the W3C has not accepted it as enough
+ * on its own (w3c/wcag#3766), which is why the button is always there.
+ *
+ * `fill` makes it cover its positioned parent (hero use). The parent must be `relative`. The button sits at
+ * z-30 so the readability overlays that follow the video in the DOM never cover it.
+ */
+const STORAGE_KEY = 'bg-video-paused'
+
+export default function BackgroundVideo({
+  src,
+  poster,
+  className = '',
+  fill = false,
+  buttonClassName = 'bottom-4 right-4',
+}: {
+  src: string
+  poster?: string
+  className?: string
+  fill?: boolean
+  buttonClassName?: string
+}) {
+  const ref = useRef<HTMLVideoElement>(null)
+  const [playing, setPlaying] = useState(false)
+
+  useEffect(() => {
+    const video = ref.current
+    if (!video) return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let pausedByVisitor = false
+    try { pausedByVisitor = sessionStorage.getItem(STORAGE_KEY) === '1' } catch {}
+
+    const start = () => {
+      if (reduce.matches || pausedByVisitor) { video.pause(); return }
+      video.muted = true
+      video.play().catch(() => setPlaying(false))
+    }
+    const onPlay = () => setPlaying(true)
+    const onPause = () => setPlaying(false)
+    const onMotionChange = () => (reduce.matches ? video.pause() : start())
+
+    video.addEventListener('play', onPlay)
+    video.addEventListener('pause', onPause)
+    reduce.addEventListener('change', onMotionChange)
+    start()
+    return () => {
+      video.removeEventListener('play', onPlay)
+      video.removeEventListener('pause', onPause)
+      reduce.removeEventListener('change', onMotionChange)
+    }
+  }, [])
+
+  const toggle = () => {
+    const video = ref.current
+    if (!video) return
+    if (video.paused) {
+      try { sessionStorage.removeItem(STORAGE_KEY) } catch {}
+      video.muted = true
+      video.play().catch(() => {})
+    } else {
+      try { sessionStorage.setItem(STORAGE_KEY, '1') } catch {}
+      video.pause()
+    }
+  }
+
+  const label = playing ? 'Pause background video' : 'Play background video'
+
+  return (
+    <>
+      <video
+        ref={ref}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster={poster}
+        aria-hidden="true"
+        tabIndex={-1}
+        className={fill ? `absolute inset-0 w-full h-full ${className}` : className}
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+      <button
+        type="button"
+        onClick={toggle}
+        aria-label={label}
+        title={label}
+        className={`absolute z-30 ${buttonClassName} inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-black/65 text-white shadow-lg backdrop-saturate-150 transition-colors hover:bg-black/85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`}
+      >
+        {playing ? (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></svg>
+        ) : (
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" /></svg>
+        )}
+      </button>
+    </>
+  )
+}
