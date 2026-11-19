@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import BackgroundVideo from '@/components/BackgroundVideo'
+import HeroShopBay from '@/components/HeroShopBay'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ogImage } from '@/lib/site'
@@ -176,51 +176,7 @@ export default function HomePage() {
       />
 
       {/* ── HERO ────────────────────────────────────────────────── */}
-      <section className="relative min-h-[92vh] flex items-end overflow-hidden bg-primary-dark" aria-label="Hero">
-        {/* Video background — falls back to poster image if video missing */}
-        <BackgroundVideo
-          fill
-          src="/videos/hero.mp4"
-          poster="/images/hero-poster.jpg"
-          className="object-cover object-[center_65%] [filter:contrast(1.08)_saturate(1.12)_brightness(1.04)]"
-          buttonClassName="bottom-5 right-5"
-        />
-
-        {/* Left-anchored fade for text legibility — keeps right two-thirds clean */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,8,11,0.95)_0%,rgba(6,8,11,0.82)_35%,rgba(6,8,11,0.45)_55%,transparent_75%)]" />
-        {/* Bottom anchor — short fade behind the CTA stack only */}
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_top,rgba(6,8,11,0.75)_0%,transparent_100%)]" />
-        {/* Electric-blue rim glow on the right edge — reinforces the studio lighting */}
-        <div className="absolute inset-y-0 right-0 w-1/3 bg-[linear-gradient(to_left,rgba(36,86,199,0.18)_0%,transparent_70%)] mix-blend-screen pointer-events-none" />
-
-        {/* Content — bottom-left for cinematic composition */}
-        <div className="relative z-10 container-wide pb-20 md:pb-28 pt-32">
-          <div className="max-w-3xl">
-            <p className="section-label mb-5 flex items-center gap-2">
-              <span className="inline-block w-8 h-px bg-accent" />
-              Lockport, Louisiana • Family Owned
-            </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-chrome uppercase leading-[0.95] tracking-tight">
-              Custom Lift Kits<br />
-              <span className="text-accent-text">& Truck Builds</span><br />
-              <span className="text-chrome-light">in Lockport, LA</span>
-            </h1>
-            <p className="mt-7 text-lg md:text-xl text-chrome-dark max-w-2xl leading-relaxed font-light">
-              Custom suspension installs, engine rebuilds, transmission swap service, custom wheels and tires.
-              Backed by over a decade of custom shop experience from sister business CTR Pro Coat.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-accent text-base">
-                Get a Free Quote
-              </Link>
-              <ScheduleButton />
-              <a href="tel:+19852583831" className="btn-outline text-base">
-                Call (985) 258-3831
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroShopBay />
 
       {/* ── TRUST BAR ───────────────────────────────────────────── */}
       <div className="bg-accent" role="region" aria-label="Company highlights">

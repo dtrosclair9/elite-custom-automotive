@@ -1,0 +1,34 @@
+/* Homepage hero, "Shop Bay Split" (Codex concept A, chosen by Dayne 2026-11-18).
+   Text always sits on a solid panel, never over the photo, so contrast holds at every width.
+   Phone/iPad: copy panel, then the photo band, then address + hours. Desktop (>=1024): copy left, photo/video right. */
+.hero { background: #0f1115; }
+.message { padding: 26px 20px 28px; }
+.eyebrow { display: flex; align-items: center; gap: 10px; color: #5c8def; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.eyebrow::before { content: ""; width: 25px; height: 3px; background: #5c8def; transform: skewX(-24deg); }
+.title { margin: 12px 0 14px; font-family: var(--font-oswald), "Arial Narrow", sans-serif; font-weight: 700; font-size: clamp(2.375rem, 10vw, 4.7rem); line-height: 1.04; letter-spacing: -0.018em; text-transform: uppercase; color: #fff; }
+.title span { display: block; }
+.city { margin-top: 8px; color: #5c8def; font-size: 0.65em; letter-spacing: 0; }
+.description { max-width: 36ch; color: #c4cbd6; font-size: 1rem; line-height: 1.55; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.vehicle { position: relative; overflow: hidden; border-top: 3px solid #5c8def; background: #171f2b; height: clamp(232px, 68vw, 450px); }
+.details { background: #06080b; padding: 17px 20px; display: flex; flex-wrap: wrap; gap: 10px 28px; color: #c4cbd6; font-size: 0.875rem; }
+.details strong { display: block; color: #fff; font-size: 0.9375rem; }
+
+@media (min-width: 650px) {
+  .message { padding: 36px 40px 34px; }
+  .title { font-size: clamp(3.4rem, 7.5vw, 4.65rem); }
+  .description { max-width: 48ch; }
+  .vehicle { height: clamp(355px, 61vw, 525px); }
+  .details { padding: 22px 40px; gap: 24px 44px; }
+}
+
+@media (min-width: 1024px) {
+  .hero { display: grid; grid-template-columns: 0.93fr 1.07fr; max-width: 1600px; margin: 0 auto; }
+  .message { align-self: center; padding: 44px 24px 44px clamp(40px, 5vw, 72px); }
+  .title { margin: 16px 0 24px; font-size: clamp(3.35rem, 5.4vw, 5.45rem); }
+  .city { margin-top: 14px; }
+  .description { font-size: 1.0625rem; }
+  .actions { margin-top: 26px; }
+  .vehicle { height: auto; min-height: clamp(520px, 42.4vw, 660px); border-top: 0; border-left: 3px solid #5c8def; }
+  .details { padding: 24px clamp(40px, 5vw, 72px); gap: 28px 56px; }
+}

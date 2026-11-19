@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -66,13 +67,17 @@ export default function Header() {
       }`}
     >
       <div className="container-wide">
-        <div className="flex items-center justify-between h-20">
-          {/* Wordmark */}
-          <Link href="/" className="flex items-center shrink-0" aria-label="Elite Custom Automotive – Home">
-            <span className="font-display uppercase tracking-widest leading-tight">
-              <span className="block text-chrome text-base sm:text-lg">Elite Custom</span>
-              <span className="block text-accent-text text-base sm:text-lg">Automotive</span>
-            </span>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo: the real badge (vector-traced 2026-11-18), large enough to read on a phone */}
+          <Link href="/" className="flex items-center shrink-0" aria-label="Elite Custom Automotive home">
+            <Image
+              src="/images/logo-badge.png"
+              alt="Elite Custom Automotive, Lockport, LA"
+              width={600}
+              height={499}
+              priority
+              className="h-[76px] w-auto lg:h-[84px]"
+            />
           </Link>
 
           {/* Desktop Nav */}

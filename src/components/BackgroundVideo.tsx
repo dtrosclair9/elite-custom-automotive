@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 /**
@@ -13,6 +14,9 @@ import { useEffect, useRef, useState } from 'react'
  *
  * `fill` makes it cover its positioned parent (hero use). The parent must be `relative`. The button sits at
  * z-30 so the readability overlays that follow the video in the DOM never cover it.
+ *
+ * `mobileStill` (fill mode): phones under 768px get this photo instead, and the video is never mounted there,
+ * so nothing moves and nothing heavy downloads. The video mounts after hydration on wider screens only.
  */
 const STORAGE_KEY = 'bg-video-paused'
 
@@ -22,17 +26,31 @@ export default function BackgroundVideo({
   className = '',
   fill = false,
   buttonClassName = 'bottom-4 right-4',
+  mobileStill,
 }: {
   src: string
   poster?: string
   className?: string
   fill?: boolean
   buttonClassName?: string
+  mobileStill?: { src: string; alt: string; position: string; className?: string }
 }) {
   const ref = useRef<HTMLVideoElement>(null)
   const [playing, setPlaying] = useState(false)
+  // With a mobile still, the video only exists on screens 768px and up (decided after hydration).
+  const [showVideo, setShowVideo] = useState(!mobileStill)
 
   useEffect(() => {
+    if (!mobileStill) return
+    const wide = window.matchMedia('(min-width: 768px)')
+    const update = () => setShowVideo(wide.matches)
+    update()
+    wide.addEventListener('change', update)
+    return () => wide.removeEventListener('change', update)
+  }, [mobileStill])
+
+  useEffect(() => {
+    if (!showVideo) return
     const video = ref.current
     if (!video) return
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -57,7 +75,7 @@ export default function BackgroundVideo({
       video.removeEventListener('pause', onPause)
       reduce.removeEventListener('change', onMotionChange)
     }
-  }, [])
+  }, [showVideo])
 
   const toggle = () => {
     const video = ref.current
@@ -74,8 +92,23 @@ export default function BackgroundVideo({
 
   const label = playing ? 'Pause background video' : 'Play background video'
 
+  const still = mobileStill ? (
+    <Image
+      src={mobileStill.src}
+      alt={mobileStill.alt}
+      fill
+      priority
+      sizes="100vw"
+      className={`object-cover md:hidden ${mobileStill.className ?? ''}`}
+      style={{ objectPosition: mobileStill.position }}
+    />
+  ) : null
+
+  if (!showVideo) return still
+
   return (
     <>
+      {still}
       <video
         ref={ref}
         muted
