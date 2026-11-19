@@ -1,6 +1,6 @@
 'use client'
 
-import Image, { getImageProps } from 'next/image'
+import { getImageProps } from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 /**
@@ -92,17 +92,28 @@ export default function BackgroundVideo({
 
   const label = playing ? 'Pause background video' : 'Play background video'
 
-  const still = mobileStill ? (
-    <Image
-      src={mobileStill.src}
-      alt={mobileStill.alt}
-      fill
-      priority
-      sizes="100vw"
-      className={`object-cover md:hidden ${mobileStill.className ?? ''}`}
-      style={{ objectPosition: mobileStill.position }}
-    />
-  ) : null
+  // Phones: the still is the LCP image. Preload it only under 768px at high priority so desktops never fetch it.
+  let still = null
+  if (mobileStill) {
+    const { props: img } = getImageProps({ src: mobileStill.src, alt: mobileStill.alt, fill: true, sizes: '100vw' })
+    still = (
+      <>
+        <link rel="preload" as="image" {...{ imagesrcset: img.srcSet, imagesizes: img.sizes, media: '(max-width: 767px)', fetchpriority: 'high' }} />
+        {/* <picture> keeps React from adding its own ungated preload; desktops get a 1px blank instead of the photo */}
+        <picture>
+          <source media="(min-width: 768px)" srcSet="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+          <img
+          {...img}
+          alt={mobileStill.alt}
+          loading="eager"
+          fetchPriority="high"
+          className={`object-cover md:hidden ${mobileStill.className ?? ''}`}
+          style={{ ...img.style, objectPosition: mobileStill.position }}
+          />
+        </picture>
+      </>
+    )
+  }
 
   // Wider screens: the poster is in the server HTML as a real image, so it paints (and counts as LCP)
   // before any JS runs; the video mounts on top of it after hydration.
@@ -114,7 +125,7 @@ export default function BackgroundVideo({
     desktopPoster = (
       <>
         <link rel="preload" as="image" {...{ imagesrcset: img.srcSet, imagesizes: img.sizes, media: '(min-width: 768px)', fetchpriority: 'high' }} />
-        <img {...img} alt="" aria-hidden="true"className="object-cover hidden md:block" />
+        <img {...img} alt="" aria-hidden="true" className="object-cover hidden md:block" />
       </>
     )
   }

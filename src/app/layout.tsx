@@ -75,14 +75,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
-        {/* AutoOps online scheduler. Opened by <ScheduleButton />; also supports ?ao_auto_show=true */}
+        {/* AutoOps online scheduler. Opened by <ScheduleButton />; also supports ?ao_auto_show=true. lazyOnload: its hidden booking iframe is ~1.2MB and must not compete with the hero on phones. */}
         <Script
           id="portal-scripts"
           src="https://portal.autoops.com/portal-scripts.js"
           data-api-key="51d35eb4f8014b8b8d5bc03b50ab0fa7"
           data-google-analytics-enabled="true"
           data-loading-color="000000"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>
