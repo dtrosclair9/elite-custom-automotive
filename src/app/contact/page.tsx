@@ -52,7 +52,7 @@ export default function ContactPage() {
         <div className="container-wide text-center">
           <p className="section-label">Get in Touch</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            Contact <span className="text-accent-text">Elite</span>
+            Contact <span className="text-accent-text">Elite</span> in Lockport, LA
           </h1>
           <p className="text-chrome-dark text-lg max-w-xl mx-auto leading-relaxed">
             Ready to build something? Reach out for a free quote. Colin and the team will get back to you fast.

@@ -79,7 +79,7 @@ export default function ServicesPage() {
         <div className="container-wide text-center">
           <p className="section-label">What We Do</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            Our <span className="text-accent-text">Services</span>
+            Truck &amp; Auto <span className="text-accent-text">Services</span> in Lockport, LA
           </h1>
           <p className="text-chrome-dark text-lg max-w-2xl mx-auto leading-relaxed">
             From 2-inch level kits to full ground-up custom builds — here&apos;s everything Elite Custom Automotive

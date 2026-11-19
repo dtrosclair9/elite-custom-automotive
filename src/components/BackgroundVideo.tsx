@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image, { getImageProps } from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 /**
@@ -106,9 +106,18 @@ export default function BackgroundVideo({
 
   // Wider screens: the poster is in the server HTML as a real image, so it paints (and counts as LCP)
   // before any JS runs; the video mounts on top of it after hydration.
-  const desktopPoster = mobileStill && poster ? (
-    <Image src={poster} alt="" aria-hidden="true" fill sizes="(min-width: 1024px) 55vw, 100vw" className="object-cover hidden md:block" />
-  ) : null
+  // Server-rendered desktop poster: a plain <img> with the same srcset next/image would build, plus a preload
+  // that only fires at 768px and up, so desktop paints it early and phones never download it.
+  let desktopPoster = null
+  if (mobileStill && poster) {
+    const { props: img } = getImageProps({ src: poster, alt: '', fill: true, sizes: '(min-width: 1024px) 55vw, 100vw' })
+    desktopPoster = (
+      <>
+        <link rel="preload" as="image" {...{ imagesrcset: img.srcSet, imagesizes: img.sizes, media: '(min-width: 768px)', fetchpriority: 'high' }} />
+        <img {...img} alt="" aria-hidden="true"className="object-cover hidden md:block" />
+      </>
+    )
+  }
 
   if (!showVideo) return <>{still}{desktopPoster}</>
 
@@ -122,7 +131,9 @@ export default function BackgroundVideo({
         loop
         playsInline
         preload="metadata"
-        poster={poster}
+        // when the server-rendered poster <img> is underneath, the video needs no poster of its own (a second,
+        // later-painting copy would become the LCP element)
+        poster={desktopPoster ? undefined : poster}
         aria-hidden="true"
         tabIndex={-1}
         className={fill ? `absolute inset-0 w-full h-full ${className}` : className}

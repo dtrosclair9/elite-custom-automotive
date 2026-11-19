@@ -71,7 +71,7 @@ export default function GalleryPage() {
         <div className="container-wide text-center">
           <p className="section-label">Our Portfolio</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            Recent <span className="text-accent-text">Builds</span>
+            Lift Kit &amp; Truck <span className="text-accent-text">Builds</span> From Our Lockport Shop
           </h1>
           <p className="text-chrome-dark text-lg max-w-2xl mx-auto leading-relaxed">
             Lifted trucks, custom wheels, engine work, suspension installs, and ceramic coating from

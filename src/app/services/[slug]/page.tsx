@@ -291,6 +291,7 @@ export default async function ServiceCityPage({ params }: { params: Promise<{ sl
             <h2 id="related-heading" className="text-3xl md:text-4xl text-chrome mt-3">
               More Services in <span className="text-accent-text">{data.city}</span>
             </h2>
+            <p className="mt-4 text-chrome-dark max-w-2xl mx-auto leading-relaxed">Other work we do for drivers in {data.city}, all out of our shop at 5609 Hwy 1 in Lockport.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">

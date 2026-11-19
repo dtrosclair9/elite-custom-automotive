@@ -251,6 +251,7 @@ export default function HomePage() {
             <h2 id="builds-heading" className="text-4xl md:text-5xl text-chrome mt-3">
               From Our Shop
             </h2>
+            <p className="mt-4 text-chrome-dark max-w-2xl mx-auto leading-relaxed">Lift kits, wheel and tire packages and builds that rolled out of our Lockport bays.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

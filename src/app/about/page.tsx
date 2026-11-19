@@ -69,7 +69,7 @@ export default function AboutPage() {
         <div className="container-wide text-center">
           <p className="section-label">Our Story</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display uppercase mt-3 mb-5">
-            About <span className="text-accent-text">Elite</span>
+            About <span className="text-accent-text">Elite Custom Automotive</span> in Lockport, LA
           </h1>
           <p className="text-chrome-dark text-lg max-w-2xl mx-auto leading-relaxed">
             A locally owned custom shop built on hard work, honest diagnostics, and a real passion for
