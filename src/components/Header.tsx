@@ -75,6 +75,7 @@ export default function Header() {
               alt="Elite Custom Automotive, Lockport, LA"
               width={600}
               height={499}
+              sizes="(min-width: 1024px) 101px, 92px"
               priority
               className="h-[76px] w-auto lg:h-[84px]"
             />

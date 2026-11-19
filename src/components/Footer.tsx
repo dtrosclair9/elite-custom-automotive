@@ -28,10 +28,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <Image
-                src="/images/logo.png"
+                src="/images/logo-badge.png"
                 alt="Elite Custom Automotive"
-                width={80}
-                height={80}
+                width={600}
+                height={499}
+                sizes="100px"
                 className="h-20 w-auto"
               />
               <div className="font-display uppercase tracking-widest text-chrome leading-tight">
