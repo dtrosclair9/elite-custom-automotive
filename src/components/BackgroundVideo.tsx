@@ -104,11 +104,18 @@ export default function BackgroundVideo({
     />
   ) : null
 
-  if (!showVideo) return still
+  // Wider screens: the poster is in the server HTML as a real image, so it paints (and counts as LCP)
+  // before any JS runs; the video mounts on top of it after hydration.
+  const desktopPoster = mobileStill && poster ? (
+    <Image src={poster} alt="" aria-hidden="true" fill sizes="(min-width: 1024px) 55vw, 100vw" className="object-cover hidden md:block" />
+  ) : null
+
+  if (!showVideo) return <>{still}{desktopPoster}</>
 
   return (
     <>
       {still}
+      {desktopPoster}
       <video
         ref={ref}
         muted
